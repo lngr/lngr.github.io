@@ -227,12 +227,6 @@ i.fa-hn {
   text-decoration: none;
 }
 
-.disclaimer p {
-  margin-top: 5px;
-  font-size: 11px;
-  text-align: center;
-}
-
 .footnotes {
   font-size: 14px;
   font-style: italic;
@@ -251,4 +245,16 @@ i.fa-hn {
   text-align: center;
   font-size: smaller;
   padding-bottom: 10px
+}
+
+.license {
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+.license .license-image {
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }

@@ -15,6 +15,15 @@ layout: default
   {{ content }}
 </div>
 
+<div id="postsocial">
+
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="erjjones">Tweet</a>
+
+  <g:plusone size="medium"></g:plusone>
+
+</div>
+
+
 <div id="related">
   <h3>Related Posts</h3>
   <ul class="posts">
@@ -25,3 +34,41 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<div id="comments">
+  <div id="disqus_thread"></div>
+</div>
+
+<hr/>
+<div class="row license">
+  <div class="five columns alpha"> 
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img class="pull-left license-image" alt="Creative Commons-licens"src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"/></a> All posts and pages on this blog are licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike license</a>
+  </div>
+  <div class="five columns omega"> 
+    <a href="http://creativecommons.org/publicdomain/zero/1.0/"><img class="pull-left license-image" src="http://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0" /></a> All original code samples (those that are not quoted with another source) are placed in the <a href="http://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</div> 
+  </div>
+
+</div>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'lngr';
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<script type="text/javascript">
+(function() {
+  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+  po.src = 'https://apis.google.com/js/plusone.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
