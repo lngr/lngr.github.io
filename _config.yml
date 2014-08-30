@@ -1,5 +1,8 @@
 # General Jekyll Config
 highlighter: pygments
-url: http://example.com
+url: http://blog.langer.eu
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
+gems:
+  - jekyll-sitemap				# Search Engine Sitemaps
+  - jekyll-redirect-from		# When title/date of post changes
