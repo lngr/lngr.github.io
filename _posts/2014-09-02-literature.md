@@ -10,18 +10,23 @@ A collection of literature I recommend for reading on Event Sourcing/Event Store
 
 * [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html): Entry in Martin Fowler's bliki
 * [Event Sourcing Basics](https://github.com/eventstore/eventstore/wiki/Event-Sourcing-Basics): Introduction to Event Sourcing in the documentation of (Get)EventStore
-* Aggregates and Event Sourcing: A+ES: Appendix A contributed by Rinat Abdullin in Vaughn Vernon's IDDD book (see below). The source code is availble on [Github](https://github.com/Lokad/lokad-iddd-sample), but I also recommend to read the book.
+* Aggregates and Event Sourcing: A+ES: Appendix A contributed by Rinat Abdullin in Vaughn Vernon's IDDD book (see below). 
 * [Introducing Event Sourcing](http://msdn.microsoft.com/en-us/library/jj591559.aspx): A chapter in the CQRS Journey e-book
 * [Event Sourcing](http://cqrs.wikidot.com/doc:event-sourcing) in a CQRS wiki
 * [Events as a Storage Mechanism](http://cqrs.wordpress.com/documents/events-as-storage-mechanism/)  by Greg Young
 * [Event Sourcing a la Lokad](http://abdullin.com/post/event-sourcing-a-la-lokad/) by Rinat Abdullin
 * [Event Sourcing as a strategic advantage](http://lostechies.com/jimmybogard/2011/10/11/event-sourcing-as-a-strategic-advantage/) by Jimmy Bogard
 * [A better domain events pattern](http://lostechies.com/jimmybogard/2014/05/13/a-better-domain-events-pattern/) by Jimmy Bogard
-* [IDDD Sample application](https://github.com/VaughnVernon/IDDD_Samples/tree/master/iddd_collaboration/src/main/java/com/saasovation/collaboration): The "Collaboration" Bounded Context of Vaughn Vernon's sample code for this IDDD book (see below) uses event sourcing, see, e.g., the [`Discussion`](https://github.com/VaughnVernon/IDDD_Samples/blob/master/iddd_collaboration/src/main/java/com/saasovation/collaboration/domain/model/forum/Discussion.java) AR derived from the [`EventSourcedRootEntity`](https://github.com/VaughnVernon/IDDD_Samples/blob/master/iddd_common/src/main/java/com/saasovation/common/domain/model/EventSourcedRootEntity.java).  This sample can get you started with Event Sourcing in Java very quickly.
+* [Aggregates and their events](http://seabites.wordpress.com/2011/02/13/aggregates-and-their-events/) by Yves Reynhout
+* [Value objects in an event sourced domain model](http://seabites.wordpress.com/2012/06/18/value-objects-in-an-eventsourced-domain-model/) by Yves Reynhout
+
+## Code
+
 * [NEventStore CommonDomain](https://github.com/NEventStore/CommonDomain): Originally by Jonathan Oliver and now maintained as part of the NEventStore project, the CommonDomain is a great foundation for C# applications that want to use Event Sourcing and can also serve as a reference for ports into other languages.
-* [.NET Event Sourcing](https://github.com/elliotritchie/NES): a lightweight framework for C#, attempts to fill in the gaps between NServiceBus and NEventStore. 
-* [AggregateSource](https://github.com/yreynhout/AggregateSource): A lightweight infrastructure for doing eventsourcing using aggregates in C# by Yves Reynhout; see also [AggregateSource Testing
-](https://github.com/yreynhout/AggregateSource/blob/master/src/Testing/AggregateSource.Testing/README.md)
+* [IDDD Sample application](https://github.com/VaughnVernon/IDDD_Samples/tree/master/iddd_collaboration/src/main/java/com/saasovation/collaboration): The "Collaboration" Bounded Context of Vaughn Vernon's sample code for this IDDD book (see below) uses event sourcing, see, e.g., the [`Discussion`](https://github.com/VaughnVernon/IDDD_Samples/blob/master/iddd_collaboration/src/main/java/com/saasovation/collaboration/domain/model/forum/Discussion.java) AR derived from the [`EventSourcedRootEntity`](https://github.com/VaughnVernon/IDDD_Samples/blob/master/iddd_common/src/main/java/com/saasovation/common/domain/model/EventSourcedRootEntity.java).  This sample can get you started with Event Sourcing in Java very quickly.
+* [Lokad IDDD Sample](https://github.com/Lokad/lokad-iddd-sample): the source code for Rinat Abdullin's chapter in the IDDD book (C#)
+* [.NET Event Sourcing](https://github.com/elliotritchie/NES): a lightweight framework for .NET, attempts to fill in the gaps between NServiceBus and NEventStore. 
+* [AggregateSource](https://github.com/yreynhout/AggregateSource): A lightweight infrastructure for doing eventsourcing using aggregates in C# by Yves Reynhout; see also [AggregateSource Testing](https://github.com/yreynhout/AggregateSource/blob/master/src/Testing/AggregateSource.Testing/README.md)
 
 ## Testing
 * [Scenario-based Unit Tests for DDD with Event Sourcing](http://abdullin.com/post/scenario-based-unit-tests-for-ddd-with-event-sourcing/)
@@ -33,6 +38,10 @@ A collection of literature I recommend for reading on Event Sourcing/Event Store
 * [Building an Event Storage](http://cqrs.wordpress.com/documents/building-event-storage/) by Greg Young
 * [Your Coffee Shop Doesn't Use Two-Phase Commit](http://eaipatterns.com/docs/IEEE_Software_Design_2PC.pdf) by Gregor Hope
 * [How I Avoid Two-Phase Commit](http://blog.jonathanoliver.com/how-i-avoid-two-phase-commit/) and [Removing 2PC (Two Phase Commit)](http://blog.jonathanoliver.com/removing-2pc-two-phase-commit/): Jonathan Oliver on how NEventStore avoids expensive 2PCs
+* [Your EventStream is a linked list](http://seabites.wordpress.com/2011/12/07/your-eventstream-is-a-linked-list/) by Yves Reynhout
+
+## Code
+* [NEventStore](https://github.com/NEventStore/NEventStore): The implementation of the popular event store for .NET is a must-read:  It's very well designed and the code is easy to understand.  It can serve as a template for implementation in other languages --- in fact, our own [JEEventStore](https://github.com/JEEventStore/JEEventStore) was heavily influenced by it.
 
 # CQRS (including CQRS+ES)
 
@@ -53,12 +62,17 @@ A collection of literature I recommend for reading on Event Sourcing/Event Store
 
 * [CQRS and user experience](http://lostechies.com/jimmybogard/2012/08/23/cqrs-and-user-experience/) by Jimmy Bogard
 * [CQRS -- Use Your Common Sense](http://eventuallyconsistent.net/2012/08/24/cqrs-use-your-common-sense/) by Steve Bate
-* [CQRS Event Sourcing: Validate UserName uniqueness](http://stackoverflow.com/questions/9495985/cqrs-event-sourcing-validate-username-uniqueness): Stackoverflow question on a very common use-case
-* [Greg Young's SimpleCQRS example](https://github.com/gregoryyoung/m-r/tree/master/SimpleCQRS): small sample project that let's one quickly understand the CQRS principle
+* [CQRS Event Sourcing: Validate UserName uniqueness](http://stackoverflow.com/questions/9495985/cqrs-event-sourcing-validate-username-uniqueness): Stackoverflow question on a very common use-case: uniqueness constraints
+* [Eventual Consistency and Set Validation](http://codebetter.com/gregyoung/2010/08/12/eventual-consistency-and-set-validation/): Greg Young on uniqueness constraints
+* [Secondary indexes and constraints on the write side](http://seabites.wordpress.com/2010/11/11/consistent-indexes-constraints/): Yves Reynhout on uniqueness constraints
 
+
+## Code Samples
+
+* [Greg Young's SimpleCQRS example](https://github.com/gregoryyoung/m-r/tree/master/SimpleCQRS): small C# sample project that let's one quickly grasp the CQRS principle
 * [Lokad.CQRS Sample Project](http://lokad.github.io/lokad-cqrs/) An advanced (and complex) CQRS sample project
-
-
+* [CQRS Journey Code](https://github.com/mspnp/cqrs-journey-code): the CQRS Journey sample application for the e-book
+* [SimpleCQRS](https://github.com/tyronegroves/SimpleCQRS) by Tyrone Groves (C#)
 
 # DDD
 
