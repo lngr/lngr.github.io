@@ -119,6 +119,10 @@ nav hr {
   font-size: 13px;
 }
 
+#post p {
+  text-align: justify;
+}
+
 #post pre {
   border: 1px solid #ddd;
   background-color: #eef;
