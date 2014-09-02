@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building an Event Store for Java
-categories: JEEventStore
+categories: JEEventStore, event-store, event-sourcing
 ---
 
 A common legal requirement in the area of medical software is that the change history of medical health records must be kept available.  With traditional relational databases, we used a one-revision--one-row approach, storing each revision of a record in a single row and having an extra field in the table point to the previous revision. This was working fine but put a significant amount of burden onto the development team.
