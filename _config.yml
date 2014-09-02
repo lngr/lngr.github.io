@@ -1,6 +1,7 @@
 # General Jekyll Config
-highlighter: pygments
-url: http://blog.langer.eu
+highlighter: 	pygments
+url: 			http://blog.langer.eu
+permalink:   	/:year/:month/:day/:title.html
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
 gems:
