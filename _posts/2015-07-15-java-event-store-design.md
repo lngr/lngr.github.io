@@ -40,8 +40,8 @@ Some of the modularity features I had in mind:
 * Add encryption by adding a suitable decorator to the serialization engine
 * Add other persistence engines beside JPA, e.g., direct JDBC access, MongoDB or other NoSQL engines with suitable atomicity semantics (Redis might be a candidate)
 * Add other serialization engines beside GSON, e.g., XML, Protobuff, ...
-* Allw event updasting by writing custom type converters
+* All event updasting by writing custom type converters
 * Ease of use:  provide drop-in EJB-jars, which developers can simply include in the Maven configuration to add JEEventStore to their application
 * be able to write own deployment descriptors for more complex setups with multiple decorators
-* **Event Notification** interface that runs within the same transaction, to avoid polling of the database.  Support polling for persistence layers without transaction semends or when 2-Phase-Commits with the messaging infrastructure shall be avoided.
+* An **event notification** system to let listeners know about newly committed events (required for CQRS), which runs within the same transaction, to avoid polling of the database.  Support polling for persistence layers without transaction semends or when 2-Phase-Commits with the messaging infrastructure shall be avoided.
 
