@@ -19,6 +19,11 @@ A collection of literature I recommend for reading on Event Sourcing/Event Store
 * [A better domain events pattern](http://lostechies.com/jimmybogard/2014/05/13/a-better-domain-events-pattern/) by Jimmy Bogard
 * [Aggregates and their events](http://seabites.wordpress.com/2011/02/13/aggregates-and-their-events/) by Yves Reynhout
 * [Value objects in an event sourced domain model](http://seabites.wordpress.com/2012/06/18/value-objects-in-an-eventsourced-domain-model/) by Yves Reynhout
+* [Event Sourcing Revisited](https://lostechies.com/gabrielschenker/2015/05/26/event-sourcing-revisited/],
+	[Event Sourcing applied - the Aggregate](https://lostechies.com/gabrielschenker/2015/06/06/event-sourcing-applied-the-aggregate/),
+	[Event Sourcing applied – the application service](https://lostechies.com/gabrielschenker/2015/06/13/event-sourcing-applied-the-application-service/),
+	[Event Sourcing applied – the Repository](https://lostechies.com/gabrielschenker/2015/07/13/event-sourcing-applied-the-repository/)
+	blog post series by Gabriel Schenker
 
 ## Code
 
@@ -88,3 +93,6 @@ A collection of literature I recommend for reading on Event Sourcing/Event Store
 * [The LMAX disruptor](http://martinfowler.com/articles/lmax.html): Entry in Martin Fowler's bliki.  The LMAX disruptor a high-performance, single-threaded messaging architecture for the JVM that for a financial application handles up to 6 million order per second.  Even if such scalability is way out of scope of most projects, you should be aware of it.
 * [NServiceBus](https://github.com/Particular/NServiceBus): The most popular service bus for .NET.  If you are going to use CQRS+ES in a C# project, you should look at this.
 
+# Updates to this post
+
+* 2015-07-15: Added Gabriel Schenker's blog series on Event Sourcing.
