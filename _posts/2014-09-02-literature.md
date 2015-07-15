@@ -19,7 +19,7 @@ A collection of literature I recommend for reading on Event Sourcing/Event Store
 * [A better domain events pattern](http://lostechies.com/jimmybogard/2014/05/13/a-better-domain-events-pattern/) by Jimmy Bogard
 * [Aggregates and their events](http://seabites.wordpress.com/2011/02/13/aggregates-and-their-events/) by Yves Reynhout
 * [Value objects in an event sourced domain model](http://seabites.wordpress.com/2012/06/18/value-objects-in-an-eventsourced-domain-model/) by Yves Reynhout
-* [Event Sourcing Revisited](https://lostechies.com/gabrielschenker/2015/05/26/event-sourcing-revisited/],
+* [Event Sourcing Revisited](https://lostechies.com/gabrielschenker/2015/05/26/event-sourcing-revisited/),
 	[Event Sourcing applied - the Aggregate](https://lostechies.com/gabrielschenker/2015/06/06/event-sourcing-applied-the-aggregate/),
 	[Event Sourcing applied – the application service](https://lostechies.com/gabrielschenker/2015/06/13/event-sourcing-applied-the-application-service/),
 	[Event Sourcing applied – the Repository](https://lostechies.com/gabrielschenker/2015/07/13/event-sourcing-applied-the-repository/)
